@@ -4,20 +4,38 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var monkeyx =0
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
-  
+
+  strokeWeight(5);
+  line(124+monkeyx,68,148+monkeyx,99 );
+  line(172+monkeyx,55,170+monkeyx,91);
+
+
+  ellipse(160+monkeyx, 100, 25, 40); //body
+  ellipse(152+monkeyx,70,25,25);// head
+
+  line(153+monkeyx,119,149+monkeyx,141,);
+  line(170+monkeyx,117, 179+monkeyx,139);
+
+   
 
 
 
 
 
 
-  if(mousePressed){showXYPositions();}
+  if(mousePressed){
+    showXYPositions();
+    monkeyx=270
+  }
+  else{
+    monkeyx=0
+  }
 
 }
 
