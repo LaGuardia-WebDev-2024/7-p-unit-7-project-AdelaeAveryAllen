@@ -5,6 +5,8 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var monkeyx =0
+var carx=0
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -12,8 +14,8 @@ draw = function(){
   background(255,255,255,0);
 
   strokeWeight(5);
-  line(124+monkeyx,68,148+monkeyx,99 );
-  line(172+monkeyx,55,170+monkeyx,91);
+  line(124+monkeyx,68,148+monkeyx,99 ); //left arm
+  line(172+monkeyx,55,170+monkeyx,91); //right arm
 
 
   ellipse(160+monkeyx, 100, 25, 40); //body
@@ -22,10 +24,19 @@ draw = function(){
   line(153+monkeyx,119,149+monkeyx,141,);
   line(170+monkeyx,117, 179+monkeyx,139);
 
-   
+  rect(399+carx,279,100,67);
+  ellipse(409+carx,338,35,35);
+  ellipse(492+carx,339,35,35);
+
+ellipse(459,165,26,26);
+ellipse(460,200,25,40);
+line(447,188,421,175);
+line(470,187,490,166);
 
 
 
+
+carx-=1
 
 
 
