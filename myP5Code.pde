@@ -5,7 +5,8 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var monkeyx =0
-var carx=0
+var carx=200
+var monkeyy=-55
 
 
 //🟢Draw Procedure - Runs on Repeat
@@ -28,10 +29,14 @@ draw = function(){
   ellipse(409+carx,338,35,35);
   ellipse(492+carx,339,35,35);
 
-ellipse(459,165,26,26);
-ellipse(460,200,25,40);
-line(447,188,421,175);
-line(470,187,490,166);
+ellipse(459,165+monkeyy,26,26);
+ellipse(460,200+monkeyy,25,40);
+line(450,188+monkeyy,421,175+monkeyy);
+line(470,187+monkeyy,490,155+monkeyy);
+line(451,161,436,183);
+line(470,164,487,179);
+
+
 
 
 
