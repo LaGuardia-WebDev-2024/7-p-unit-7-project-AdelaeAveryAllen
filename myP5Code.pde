@@ -7,6 +7,7 @@ void setup() {
 var monkeyx =0
 var carx=200
 var monkeyy=-55
+var monkey2x=0
 
 
 //🟢Draw Procedure - Runs on Repeat
@@ -29,12 +30,12 @@ draw = function(){
   ellipse(409+carx,338,35,35);
   ellipse(492+carx,339,35,35);
 
-ellipse(459,165+monkeyy,26,26);
-ellipse(460,200+monkeyy,25,40);
-line(450,188+monkeyy,421,175+monkeyy);
-line(470,187+monkeyy,490,155+monkeyy);
-line(451,161,436,183);
-line(470,164,487,179);
+ellipse(459+monkey2x,165+monkeyy,26,26);
+ellipse(460+monkey2x,200+monkeyy,25,40);
+line(450+monkey2x,188+monkeyy,421+monkey2x,175+monkeyy);
+line(470+monkey2x,187+monkeyy,490+monkey2x,155+monkeyy);
+line(451+monkey2x,215+monkeyy,435+monkey2x,250+monkeyy);
+line(470+monkey2x,215+monkeyy,487+monkey2x,250+monkeyy);
 
 
 
@@ -43,7 +44,10 @@ line(470,164,487,179);
 
 carx-=1
 
-
+if(carx<15){
+  monkeyy=25; 
+  monkey2x-=1;
+}
 
   if(mousePressed){
     showXYPositions();
